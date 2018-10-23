@@ -5,15 +5,13 @@ def newdowncase(input)
 	else
 	input.length.times do |letter|
 		dc_hash.each do |value|
-			if dc_hash.include?input[letter]
 			puts "value2: #{value[1].to_s}"
 			puts "letter: #{input[letter]}"
-				if input[letter] == value[1].to_s
-					result << value[1].to_s
-					puts result
-				elsif input[letter] == value[0].to_s
-					result << value[1].to_s
-				end
+			if input[letter] == value[1].to_s
+				result << value[1].to_s
+				puts result
+			elsif input[letter] == value[0].to_s
+				result << value[1].to_s
 			else
 				result << input[letter]
 			end
