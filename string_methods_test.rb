@@ -34,4 +34,7 @@ class My_test < Minitest::Test
 		input = "TeSt NuMbEr ThReE"
 		assert_equal("test number three", newdowncase(input))
 	end
+	def test_downcase4
+		input = 123
+		assert_equal("This is not a string.", downcase(input))
 end
