@@ -1,3 +1,5 @@
+
+
 def newdowncase(input)
 	result = ""
 	if input.class != String
@@ -16,7 +18,7 @@ def newdowncase(input)
 		end
 	end
 end
-	return result
+return result
 end
 def dc_hash
 	{	"A" => "a",
