@@ -20,4 +20,8 @@ class My_test < Minitest::Test
 		input = "Washington"
 		assert_equal("washington", newdowncase(input))
 	end
+	def test_downcase2
+		input = "Washboard"
+		assert_equal("washboard", newdowncase(input))
+	end
 end
