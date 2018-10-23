@@ -12,8 +12,6 @@ def newdowncase(input)
 				puts result
 			elsif input[letter] == value[0].to_s
 				result << value[1].to_s
-			else
-				result << input[letter]
 			end
 		end
 	end
