@@ -1,3 +1,3 @@
 def newreplace(input,output)
-	input = "wrongstring"
+input = output
 end
