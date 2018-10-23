@@ -8,8 +8,5 @@ def newreplace(input,output)
 	else
 		input = output
 	end
-end
-
-def newdowncase(input)
-	"washington"
+	return output
 end

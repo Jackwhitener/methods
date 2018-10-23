@@ -1,5 +1,6 @@
 require "minitest/autorun"
 require_relative "string_methods.rb"
+require_relative "string_methods_two.rb"
 class My_test < Minitest::Test
 	def test_replace1
 		input = "Strongstring"
