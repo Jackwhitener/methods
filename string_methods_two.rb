@@ -1,7 +1,7 @@
 
 def newdowncase(input)
 	result = ""
-	dc_hash.keys.each do |x|
+	dc_hash.values.each do |x|
 		input.length.times do |y|
 			if input[y] == x
 				result << x
