@@ -13,8 +13,13 @@ class My_test < Minitest::Test
 		assert_equal("dinner rolls", newreplace(input,output))
 	end
 	def test_replace3
-		input = "Four"
+		input = "four"
 		output = 4
+		assert_equal("Error, this is a string function, others begone.",newreplace(input,output))
+	end
+	def test_replace4
+		input = 4
+		output = "four"
 		assert_equal("Error, this is a string function, others begone.",newreplace(input,output))
 	end
 	def test_downcase1
