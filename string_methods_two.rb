@@ -1,8 +1,8 @@
-
 def newdowncase(input)
 	result = ""
-	dc_hash.each do |value|
-		input.length.times do |letter|
+
+	input.length.times do |letter|
+		dc_hash.each do |value|
 			puts "value2: #{value[1].to_s}"
 			puts "letter: #{input[letter]}"
 			if input[letter] == value[1].to_s
