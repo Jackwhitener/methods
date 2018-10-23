@@ -1,14 +1,17 @@
 
 def newdowncase(input)
 	result = ""
-	dc_hash.values.each do |x|
+	dc_hash.keys.each do |x|
 		input.length.times do |y|
-			if input[y] == dc_hash[x]
+			if input[y] == x
+				result << x
+				puts result
+			elsif input[y] == dc_hash[x]
 				result << x
 			end
 		end
 	end
-	return input
+	return result
 end
 def dc_hash
 	{	"A" => "a",
@@ -37,4 +40,3 @@ def dc_hash
 		"X" => "y",
 		"Z" => "z"}
 end
-newdowncase("W")
