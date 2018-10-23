@@ -6,7 +6,7 @@ def newdowncase(input)
 			puts "value2: #{value[1].to_s}"
 			puts "letter: #{input[letter]}"
 			if input[letter] == value[1].to_s
-				result << value
+				result << value[1].to_s
 				puts result
 			# elsif 
 
