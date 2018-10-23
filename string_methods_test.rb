@@ -42,4 +42,8 @@ class My_test < Minitest::Test
 		input = "123"
 		assert_equal("123",newdowncase(input))
 	end
+	def test_downcase6
+		input = "T3s4BBBBNineteen12932"
+		assert_equal("t3s4bbbbnineteen12932", newdowncase(input))
+	end
 end
