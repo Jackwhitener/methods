@@ -1,6 +1,8 @@
 def newdowncase(input)
 	result = ""
-
+	if input.class != String
+		result = "This is not a string."
+	else
 	input.length.times do |letter|
 		dc_hash.each do |value|
 			puts "value2: #{value[1].to_s}"
@@ -13,9 +15,7 @@ def newdowncase(input)
 			end
 		end
 	end
-	if input.class != String
-		result = "This is not a string."
-	end
+end
 	return result
 end
 def dc_hash
