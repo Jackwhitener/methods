@@ -16,4 +16,8 @@ class My_test < Minitest::Test
 		output = 4
 		assert_equal("Error, this is a string function, integers begone.",newreplace(input,output))
 	end
+	def test_downcase1
+		input = "Washington"
+		assert_equal("washington", newdowncase(input))
+	end
 end
