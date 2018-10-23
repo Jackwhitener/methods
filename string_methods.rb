@@ -1,3 +1,3 @@
-def new_replace(input)
+def newreplace(input)
 	input = "wrongstring"
 end
