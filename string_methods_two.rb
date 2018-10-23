@@ -13,6 +13,9 @@ def newdowncase(input)
 			end
 		end
 	end
+	if input.class != String
+		result = "This is not a string."
+	end
 	return result
 end
 def dc_hash
