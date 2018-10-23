@@ -6,8 +6,6 @@ def newdowncase(input)
 			if input[y] == x
 				result << x
 				puts result
-			elsif input[y] == dc_hash[x]
-				result << x
 			end
 		end
 	end
