@@ -1,4 +1,4 @@
-class String
+# class String
 	def newdowncase(input)
 		result = ""
 		dc_hash.values.each do |x|
@@ -11,7 +11,7 @@ class String
 		return result
 	end
 
-	private
+	# private
 
 	def dc_hash
 		{	"A" => "a",
@@ -40,4 +40,4 @@ class String
 			"X" => "y",
 			"Z" => "z"}
 	end
-end
+# end
