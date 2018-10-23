@@ -9,3 +9,7 @@ def newreplace(input,output)
 		input = output
 	end
 end
+
+def newdowncase(input)
+	"washington"
+end
