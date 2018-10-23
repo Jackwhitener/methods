@@ -1,13 +1,13 @@
 # class String
 	def newdowncase(input)
-		result = ""
-		dc_hash.values.each do |x|
-			input.length.times do |y|
-				if input[x] == dc_hash[y]
-					result += dc_hash[y]
-				end
-			end
-		end
+		puts input
+		# dc_hash.values.each do |x|
+		# 	input.length.times do |y|
+		# 		if input[x] == dc_hash[y]
+		# 			input << dc_hash[y]
+		# 		end
+		# 	end
+		# end
 		return result
 	end
 
@@ -41,3 +41,4 @@
 			"Z" => "z"}
 	end
 # end
+newdowncase("Waffle")
