@@ -1,11 +1,15 @@
 
 def newdowncase(input)
 	result = ""
-	dc_hash.values.each do |x|
-		input.length.times do |y|
-			if input[y] == x
-				result << x
+	dc_hash.values.each do |value|
+		input.length.times do |letter|
+			p input[letter]
+			p value
+			if input[letter] == value
+				result << value
 				puts result
+			else input[letter] == dc_hash.key[value]
+				result << dc_hash.value
 			end
 		end
 	end
