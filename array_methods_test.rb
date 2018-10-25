@@ -13,4 +13,8 @@ class My_test < Minitest::Test
 		taking = 2
 		assert_equal([1,2], newtake([1,2,3],taking))
 	end
+	def test_take_check_for_array
+		taking = 1
+		assert_equal("Error, not an array", newtake("Smittywerberjaegermanjensen", taking))
+	end
 end
