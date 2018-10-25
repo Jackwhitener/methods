@@ -33,4 +33,8 @@ class My_test < Minitest::Test
 		dropping = 0
 		assert_equal("Generic Error Message",newdrop("Applesauce",dropping))
 	end
+	def test_drop_check_for_int
+		dropping = "Potato"
+		assert_equal("Generic Error Message",newdrop([1],dropping))
+	end
 end
