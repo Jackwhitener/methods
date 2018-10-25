@@ -1,4 +1,6 @@
 def newreplace(input,output)
+	# p input
+	# p output
 	if input.class != String
 		output = "Error, this is a string function, others begone."
 		# puts output
