@@ -1,6 +1,6 @@
 require "minitest/autorun"
 require_relative "array_methods.rb"
-# require_relative ""
+require_relative "array_methods_two.rb"
 class My_test < Minitest::Test
 	def test_1
 		assert_equal(1,1)
@@ -16,5 +16,8 @@ class My_test < Minitest::Test
 	def test_take_check_for_array
 		taking = 1
 		assert_equal("Error, not an array", newtake("Smittywerberjaegermanjensen", taking))
+	end
+	def test_drop1
+		assert_equal([], newdrop([1]))
 	end
 end
