@@ -1,0 +1,3 @@
+def newdrop(input)
+	[]
+end
