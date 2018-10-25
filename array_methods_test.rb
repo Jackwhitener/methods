@@ -19,7 +19,7 @@ class My_test < Minitest::Test
 	end
 	def test_take_check_for_int
 		taking = "Bananas"
-		assert_equal("Error, you an only take integers,", newtake([1,2,3], taking))
+		assert_equal("Error, you can only give integers", newtake([1,2,3], taking))
 	end
 	def test_drop1
 		dropping = 1
