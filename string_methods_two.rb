@@ -9,7 +9,7 @@ def newdowncase(input)
 			# puts "letter: #{input[letter]}"
 			if input[letter] == value[1].to_s
 				result << value[1].to_s
-				puts result
+				# puts result
 			elsif input[letter] == value[0].to_s
 				result << value[1].to_s
 			end
