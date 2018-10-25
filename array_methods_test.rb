@@ -18,6 +18,10 @@ class My_test < Minitest::Test
 		assert_equal("Error, not an array", newtake("Smittywerberjaegermanjensen", taking))
 	end
 	def test_drop1
-		assert_equal([], newdrop([1]))
+		dropping = 1
+		assert_equal([], newdrop([1],dropping))
 	end
+	def test_drop2
+		dropping = 1
+		assert_equal([2], newdrop([1,2],dropping))
 end
