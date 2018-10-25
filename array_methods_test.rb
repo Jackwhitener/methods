@@ -25,4 +25,8 @@ class My_test < Minitest::Test
 		dropping = 4
 		assert_equal([5,6], newdrop([1,2,3,4,5,6],dropping))
 	end
+	def test_drop_check_for_array
+		dropping = 0
+		assert_equal("Generic Error Message",newdrop("Applesauce",dropping))
+	end
 end
