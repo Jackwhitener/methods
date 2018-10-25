@@ -22,7 +22,7 @@ class My_test < Minitest::Test
 		assert_equal([], newdrop([1],dropping))
 	end
 	def test_drop2
-		dropping = 1
-		assert_equal([2], newdrop([1,2],dropping))
+		dropping = 4
+		assert_equal([5,6], newdrop([1,2,3,4,5,6],dropping))
 	end
 end

@@ -1,10 +1,7 @@
 def newdrop(input,dropping)
-	drip = 0
-	arr = []
-	dropping.times do
-		arr << input[drip]
-		drip += 1
-	end
-	return input
-
+arr = []
+dropping.times do |drip|
+	input.delete_at(drip)
+end
+return input
 end
