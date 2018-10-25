@@ -1,5 +1,4 @@
 def newdrop(input,dropping)
-	count = 0
 	if dropping.class != Integer
 		return "Generic Error Message"
 	else
