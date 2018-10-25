@@ -4,6 +4,11 @@ def newtake(input, taking)
 	if taking.class != Integer
 		return "Error, you can only give integers"
 	else
+	if taking > input.length
+		taking = input.length
+	end
+
+
 		if input.class != Array
 			return "Error, not an array"
 		else
@@ -12,6 +17,7 @@ def newtake(input, taking)
 				cnt += 1
 			end
 		end
+		# puts "output length: #{output.length}"
 		return output
 	end
 end

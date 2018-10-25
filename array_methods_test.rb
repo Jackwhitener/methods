@@ -21,6 +21,10 @@ class My_test < Minitest::Test
 		taking = "Bananas"
 		assert_equal("Error, you can only give integers", newtake([1,2,3], taking))
 	end
+	def test_check_for_greater_than_length
+		taking = 10
+		assert_equal([1,2,3], newtake([1,2,3],taking))
+	end
 	def test_drop1
 		dropping = 1
 		assert_equal([], newdrop([1],dropping))
