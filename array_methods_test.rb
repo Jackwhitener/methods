@@ -24,4 +24,5 @@ class My_test < Minitest::Test
 	def test_drop2
 		dropping = 1
 		assert_equal([2], newdrop([1,2],dropping))
+	end
 end
