@@ -25,6 +25,6 @@ class My_test < Minitest::Test
 	end
 	def test_member_one
 		inputt = "sauce"
-		assert_equal(true(newmember(inputt)))
+		assert_equal(true,newmember(inputt))
 	end
 end
