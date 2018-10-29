@@ -14,9 +14,9 @@ def newvalue(input)
 	return bool
 end
 def newmember(inputt)
-	if inputt = "apple"
-		true
-	else
-		false
+	bowl = false
+	if inputt == "sauce"
+		bowl = true
 	end
+	return bowl
 end
