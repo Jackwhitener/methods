@@ -1,3 +1,4 @@
+
 def methodhash
 	{
 		"apple" => "sauce"
