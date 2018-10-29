@@ -20,4 +20,8 @@ class My_test < Minitest::Test
 		input = "crabs"
 		assert_equal(true, newvalue(input))
 	end
+	def test_value_for_not_string
+		input = 123
+		assert_equal(false,newvalue(input))
+	end
 end
