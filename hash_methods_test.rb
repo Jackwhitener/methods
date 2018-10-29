@@ -12,4 +12,8 @@ class My_test < Minitest::Test
 		input = "apple"
 		assert_equal(true, newvalue(input))
 	end
+	def test_value_for_false
+		input = "Jelly"
+		assert_equal(false, newvalue(input))
+	end
 end

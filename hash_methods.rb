@@ -1,5 +1,9 @@
 def newvalue(input)
-	true
+	if input == "apple"
+		return true
+	else
+		false
+	end
 end
 def methodhash
 	{
