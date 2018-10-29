@@ -13,3 +13,6 @@ def newvalue(input)
 	end
 	return bool
 end
+def newmember(inputt)
+	true
+end
