@@ -11,4 +11,5 @@ class My_test < Minitest::Test
 	def test_value_for_input
 		input = "apple"
 		assert_equal(true, newvalue(input))
+	end
 end
