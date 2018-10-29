@@ -1,12 +1,15 @@
-def newvalue(input)
-	if input == "apple"
-		return true
-	else
-		false
-	end
-end
 def methodhash
 	{
-		"apple" => "sauce"
+		"apple" => "sauce",
+		"crabs" => "crustacean"
 	}
+end
+def newvalue(input)
+	bool = false
+	methodhash.each do |value|
+		if input == value[0]
+			bool = true
+		end
+	end
+	return bool
 end
