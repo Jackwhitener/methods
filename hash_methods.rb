@@ -15,8 +15,10 @@ def newvalue(input)
 end
 def newmember(inputt)
 	bowl = false
-	if inputt == "sauce"
-		bowl = true
+	methodhash.each do |value|
+		if inputt == value[1]
+			bowl = true
+		end
 	end
 	return bowl
 end
