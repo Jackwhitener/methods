@@ -1,22 +1,25 @@
-def methodhash
-	{
-		"apple" => "sauce",
-		"crabs" => "crustacean"
-	}
-end
-def newvalue(input)
+# def methodhash
+# 	{
+# 		"apple" => "sauce",
+# 		"crabs" => "crustacean",
+# 		"onetwothree" => 123,
+# 		4444 => "four"
+# 	}
+# end
+def newvalue(input,hasash)
 	bool = false
-	methodhash.each do |value|
-		if input == value[0]
+	hasash.each do |value|
+		puts "Value #{value}"
+		if input == value[1]
 			bool = true
 		end
 	end
 	return bool
 end
-def newmember(inputt)
+def newmember(inputt,hasashs)
 	bowl = false
-	methodhash.each do |value|
-		if inputt == value[1]
+	hasashs.each do |value|
+		if inputt == value[0]
 			bowl = true
 		end
 	end
